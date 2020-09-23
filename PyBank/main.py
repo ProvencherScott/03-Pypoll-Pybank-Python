@@ -19,19 +19,20 @@ with open(csvpath, 'r') as csvfile:
     for row in csvreader:
     # capture row[0] as the list
         months.append(row[0])
-        # use length to get the total count in the list
+        # use length to get the total count of the list months
         
         # capture row[1] as the list
         profit_losses.append(int(row[1]))
+        # use sum to get the net total of the list profit_losses
         
-    # need to print length at the end
+    # need to print length at the end.
     # print(len(months))
-    
-
     print(len(months))
-    # (len(profit_losses)
-    # this is its own thing
+
+    # Need to print the sum at the end.
     print(sum(profit_losses))
+
+    # (len(profit_losses))
     # looping over the above list
     for i in range(1,len(profit_losses)):
         print(i)
