@@ -33,6 +33,7 @@ with open(budget_csv) as csvfile:
   monthly_change = Total / len(revenue_change)
   print(monthly_change)
 
+  # print(profit_loss)
   
   #Greatest Increase
   profit_increase = max(revenue_change)

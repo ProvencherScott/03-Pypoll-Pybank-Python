@@ -29,25 +29,32 @@ with open(csvpath, 'r') as csvfile:
     # print(len(months))
     print(len(months))
 
-    # Need to print the sum at the end.
+    # Need to print the net total at the end.
     print(sum(profit_losses))
 
     # (len(profit_losses))
     # looping over the above list
     for i in range(1,len(profit_losses)):
-        print(i)
-        print(profit_losses[i])
-        print(profit_losses[i-1])
+        # print(i)
+        # print(profit_losses[i])
+        # print(profit_losses[i-1])
         profit_loss_differential.append(profit_losses[i] - profit_losses[i-1])
-        break
 
+    # This is correct. Need to print this at the end.
+    print(int(sum(profit_loss_differential)/len(profit_loss_differential))) 
+    print ("what it is")  
     print(profit_loss_differential[0])
+
+
+
+
+    
     # use sum to get the net total amount of profit/losses
     #profit_losses.append(net_total)
 
 
     # testing
-    print ("what it is")
+    
 
     
     
