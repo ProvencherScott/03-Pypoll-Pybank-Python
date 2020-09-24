@@ -81,4 +81,7 @@ with open(output, "w") as poll_results:
     poll_results.write(("{}\n".format('Khan')))
     poll_results.write(("{}\n".format('Correy')))
     poll_results.write(("{}\n".format('Li')))
-    poll_results.write(("{}\n".format('Li')))
+    poll_results.write(("{}\n".format("O'Tooley")))
+    poll_results.write("-------------------------------------\n")
+    poll_results.write('Winner: {}'.format(winner))
+    poll_results.write("-------------------------------------\n")
