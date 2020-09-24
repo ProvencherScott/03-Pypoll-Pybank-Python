@@ -39,16 +39,30 @@ with open(csvpath, 'r') as csvfile:
         # print(profit_losses[i])
         # print(profit_losses[i-1])
         profit_loss_differential.append(profit_losses[i] - profit_losses[i-1])
+        Total = sum(profit_loss_differential)
 
     # This is correct. Need to print this at the end.
     print(int(sum(profit_loss_differential)/len(profit_loss_differential))) 
     print ("what it is")  
     print(profit_loss_differential[0])
 
+    profit_increase = max(profit_loss_differential)
+    print(profit_increase)
+
+    profit_decrease = min(profit_loss_differential)
+    print(profit_decrease)
 
 
 
-    
+    # THIS IS THE LAST STEP PR
+     #print(f"Total Months" & {name}")
+    # print(f"Total: {str(win_percent)}")
+    # print(f"Average Change: {str(loss_percent)}")
+    # print(f"DRAW PERCENT: {str(draw_percent)}")
+    # print(f"{name} is a {type_of_wrestler}")
+
+
+
     # use sum to get the net total amount of profit/losses
     #profit_losses.append(net_total)
 
@@ -77,9 +91,4 @@ with open(csvpath, 'r') as csvfile:
 
 
 
-    # THIS IS THE LAST STEP PR
-     #print(f"Total Months" & {name}")
-    # print(f"Total: {str(win_percent)}")
-    # print(f"Average Change: {str(loss_percent)}")
-    # print(f"DRAW PERCENT: {str(draw_percent)}")
-    # print(f"{name} is a {type_of_wrestler}")
+    

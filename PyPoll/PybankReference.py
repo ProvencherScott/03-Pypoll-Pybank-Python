@@ -37,7 +37,9 @@ with open(election_csv) as csvfile:
             otooley.append(candidates)
             otooley_votes = len(otooley)
     print(khan_votes)
-    print(correy_v
+    print(correy_votes)
+    print(li_votes)
+    print(otooley_votes)
 #Percentages
     khan_perc = round(((khan_votes / total_votes)*100),2)
     correy_perc = round(((correy_votes / total_votes)*100),2)
@@ -58,7 +60,7 @@ with open(election_csv) as csvfile:
     elif otooley_perc > max(khan_perc, correy_perc, li_perc):
         winner = "O'Tooley"
 
- print(f"Election Results") 
+    print(f"Election Results") 
     print(f"-------------------------------------" )
     print(f"Total Votes: {total_votes}")
     print(f"-------------------------------------" )
@@ -68,4 +70,4 @@ with open(election_csv) as csvfile:
     print(f"O'Tooley: {otooley_perc}% ({otooley_votes})")
     print(f"-------------------------------------" )
     print(f"Winner: {winner}")
-    print(f"-------------------------
+    print(f"----------------------------" )
