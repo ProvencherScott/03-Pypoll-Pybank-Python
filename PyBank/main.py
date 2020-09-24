@@ -25,12 +25,11 @@ with open(csvpath, 'r') as csvfile:
         profit_losses.append(int(row[1]))
         # use sum to get the net total of the list profit_losses
         
-    # need to print length at the end.
+    # need to print length of months at the end.
     # print(len(months))
-    print(len(months))
 
     # Need to print the net total at the end.
-    print(sum(profit_losses))
+    # print(sum(profit_losses))
 
     # (len(profit_losses))
     # looping over the above list
@@ -42,14 +41,36 @@ with open(csvpath, 'r') as csvfile:
         Total = sum(profit_loss_differential)
 
     # This is correct. Need to print this at the end.
-    print(int(sum(profit_loss_differential)/len(profit_loss_differential)))  
+    # print(int(sum(profit_loss_differential)/len(profit_loss_differential)))  
     # print(profit_loss_differential[0])
 
+    # the greatest increase in profits over the period
     profit_increase = max(profit_loss_differential)
-    print(profit_increase)
+    # print(profit_increase)
 
+    # the greatest decrease in profits over the period
     profit_decrease = min(profit_loss_differential)
-    print(profit_decrease)
+    # print(profit_decrease)
+
+    # Print Results
+
+    print("Financial Analysis")
+    print("--------------------------")
+    print(f"Total Months: {len(months)}")
+    print(f"Total profits: {sum(profit_losses)}")
+    print(f"Average Change: ${int(sum(profit_loss_differential)/len(profit_loss_differential))}")
+    print(f"Greatest Increase in Profits: ${max(profit_loss_differential)}")
+    print(f"Greatest Decrease in Profits: ${min(profit_loss_differential)}")
+
+    
+
+    
+
+
+
+
+
+
 
 
 
