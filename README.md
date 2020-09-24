@@ -1,6 +1,6 @@
 # Pypoll-Pybank-Python
 
-Imported csv.files to create two scripts in Visual Studio to analyze specific data. Each file contained different information; budget_data.csv pertaining towards financial data (numeric) and election_data.csv pertaining to voters information (non-numeric). The files are located in the Resources folder for PyPoll and Pybank.
+Imported csv.files to create two scripts (main.py) in Visual Studio to analyze specific data. Each file contained different information; budget_data.csv pertaining towards financial data (numeric) and election_data.csv pertaining to voters information (non-numeric). The files are located in the Resources folder for PyPoll and Pybank.
 
 Utilized Python functions recently learned in class:
 
