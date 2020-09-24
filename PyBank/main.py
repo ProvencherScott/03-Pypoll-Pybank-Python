@@ -42,9 +42,8 @@ with open(csvpath, 'r') as csvfile:
         Total = sum(profit_loss_differential)
 
     # This is correct. Need to print this at the end.
-    print(int(sum(profit_loss_differential)/len(profit_loss_differential))) 
-    print ("what it is")  
-    print(profit_loss_differential[0])
+    print(int(sum(profit_loss_differential)/len(profit_loss_differential)))  
+    # print(profit_loss_differential[0])
 
     profit_increase = max(profit_loss_differential)
     print(profit_increase)
