@@ -25,7 +25,7 @@ with open(csvpath, 'r') as csvfile:
         county.append(row[1])
         candidates.append(row[2])
     total_votes = (len(votes))
-    print(total_votes)
+    # print(total_votes)
 #vote per candidate
     for candidate in candidates:
         if candidate == "Khan":
@@ -46,10 +46,6 @@ with open(csvpath, 'r') as csvfile:
     correy_perc = round(((correy_votes / total_votes)*100),2)
     li_perc = round(((li_votes / total_votes)*100),2)
     otooley_perc = round(((otooley_votes / total_votes)*100),2)
-    print(khan_perc)
-    print(correy_perc)
-    print(li_perc)
-    print(otooley_perc)
 
 #Winner options
     if khan_perc > max(correy_perc, li_perc, otooley_perc):
@@ -61,6 +57,7 @@ with open(csvpath, 'r') as csvfile:
     elif otooley_perc > max(khan_perc, correy_perc, li_perc):
         winner = "O'Tooley"
 
+#Results
     print(f"Election Results") 
     print(f"-------------------------------------" )
     print(f"Total Votes: {total_votes}")
@@ -72,3 +69,16 @@ with open(csvpath, 'r') as csvfile:
     print(f"-------------------------------------" )
     print(f"Winner: {winner}")
     print(f"----------------------------" )
+
+
+output = os.path.join("Analysis","pypoll_analysis.txt")
+
+with open(output, "w") as poll_results:
+    poll_results.write("Election Results\n")
+    poll_results.write("-------------------------------------\n")
+    poll_results.write("Total Votes: {}\n".format(total_votes))
+    poll_results.write("-------------------------------------\n")
+    poll_results.write(("{}\n".format('Khan')))
+    poll_results.write(("{}\n".format('Correy')))
+    poll_results.write(("{}\n".format('Li')))
+    poll_results.write(("{}\n".format('Li')))
