@@ -74,41 +74,4 @@ with open(csvpath, 'r') as csvfile:
 
 
 
-    # THIS IS THE LAST STEP PR
-     #print(f"Total Months" & {name}")
-    # print(f"Total: {str(win_percent)}")
-    # print(f"Average Change: {str(loss_percent)}")
-    # print(f"DRAW PERCENT: {str(draw_percent)}")
-    # print(f"{name} is a {type_of_wrestler}")
-
-
-
-    # use sum to get the net total amount of profit/losses
-    #profit_losses.append(net_total)
-
-
-    # testing
-    
-
-    
-    
-
-
-    # Define the function and have it accept the 'wrestler_data' as its sole parameter
-    # ef print_monthcount(dates_data)
-
-    # For readability, it can help to assign your values to variables with descriptive names
-    # date = str(dates_data[0])
-
-    
-
-    #len() is used for length, the total of months
-    # For Profits, for loop to go throught the prfits (i + 1)
-
-
-
-
-
-
-
-    
+ 
