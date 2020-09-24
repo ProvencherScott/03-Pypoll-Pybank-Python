@@ -3,7 +3,7 @@ import csv
 
 csvpath = os.path.join('Resources', 'budget_data.csv')
 
-#establish a list
+#establish lists
 months = []
 profit_losses = []
 profit_loss_differential = []
